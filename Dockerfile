@@ -31,5 +31,4 @@ RUN   ./configure \
      --with-http_ssl_module \
      --with-debug && make && make install
 CMD ["/usr/local/nginx/nginx"]
-~                                 
 
