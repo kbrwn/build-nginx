@@ -26,8 +26,8 @@ RUN   ./configure \
      --sbin-path=/usr/local/nginx/nginx \
      --conf-path=/usr/local/nginx/nginx.conf \
      --pid-path=/usr/local/nginx/nginx.pid \
-     --with-pcre=/pcre-8.39 \
-     --with-zlib=/pcre-8.39/zlib-1.2.8 \
+     --with-pcre=/build/pcre-8.39 \
+     --with-zlib=/build/zlib-1.2.8 \
      --with-http_ssl_module \
      --with-debug && make && make install
 CMD ["/usr/local/nginx/nginx"]
