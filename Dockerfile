@@ -30,5 +30,5 @@ RUN   ./configure \
      --with-zlib=/build/zlib-1.2.8 \
      --with-http_ssl_module \
      --with-debug && make && make install
-CMD ["/usr/local/nginx/nginx"]
+CMD ["/usr/local/nginx/nginx", "-g", "daemon off;"]
 
